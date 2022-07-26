@@ -2,14 +2,12 @@
 public class Quadratic {
 
     public static void main(String[] args) {
-        double a = Double.parseDouble(args[0]);
-        double b = Double.parseDouble(args[1]);
-        double c = Double.parseDouble(args[2]);
-        double discriminant = b * b - 4.0 * a * c;
+        double b = Double.parseDouble(args[0]);
+        double c = Double.parseDouble(args[1]);
+        double discriminant = b * b - 4.0 * c;
         double d = Math.sqrt(discriminant);
-        double denominator = (2 * a);
-        double posX = (-b + d) / denominator;
-        double negX = (-b - d) / denominator;
-        System.out.println("X = " + posX + " or X= " + negX);
+        double posX = ((-b + d) / 2.0);
+        double negX = ((-b - d) / 2.0);
+        System.out.println("root1 = " + posX + " or root2 = " + negX);
     }
 }
