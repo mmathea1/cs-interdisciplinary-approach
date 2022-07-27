@@ -10,7 +10,7 @@ public class Ex1223 {
         LocalDate march = LocalDate.of(year, 3, 20);
         LocalDate july = LocalDate.of(year, 6, 20);
         if (date1.isAfter(march) && date1.isBefore(july)) {
-            System.out.println(date1 + " is after " + march + " and before " + july);
+            System.out.println(true);
         } else {
             System.out.println(false);
         }
