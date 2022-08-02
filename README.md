@@ -1,1 +1,1 @@
-# cs-intermediary-approach
+# cs-interdisplinary-approach
