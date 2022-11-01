@@ -8,6 +8,14 @@ public class Quadratic {
         double d = Math.sqrt(discriminant);
         double posX = ((-b + d) / 2.0);
         double negX = ((-b - d) / 2.0);
-        System.out.println("root1 = " + posX + " or root2 = " + negX);
+        System.out.println("Roots= " + posX + ", " + negX);
+        if (discriminant < 0) {
+            System.out.println("Discriminant= " + discriminant + ". Roots are imaginary");
+        } else if (discriminant > 0) {
+            System.out.println("Discriminant= " + discriminant + ". Roots are real");
+        } else {
+            System.out.println("Discriminant= " + discriminant + ". Roots are equal");
+        }
+
     }
 }
