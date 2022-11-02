@@ -3,24 +3,19 @@ public class TenHellos {
 
         int j = Integer.parseInt(args[0]);
         int i = 1;
-        do {
-            switch (i) {
-                case 1:
-                    System.out.println(i + "st Hello");
-                    break;
-                case 2:
-                    System.out.println(i + "nd Hello");
-                    break;
-                case 3:
-                    System.out.println(i + "rd Hello");
-                    break;
-                default:
-                    System.out.println(i + "th Hello");
-                    break;
+        while (i <= j) {
+            if (i % 10 == 1) {
+                System.out.println(i + "st Hello");
+            } else if (i % 10 == 2) {
+                System.out.println(i + "nd Hello");
+            } else if (i % 10 == 3) {
+                System.out.println(i + "rd Hello");
+            } else {
+                System.out.println(i + "th Hello");
             }
             i++;
 
-        } while (i <= j);
+        }
 
     }
 }
