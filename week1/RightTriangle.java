@@ -3,11 +3,11 @@ public class RightTriangle {
         int a = Integer.parseInt(args[0]);
         int b = Integer.parseInt(args[1]);
         int c = Integer.parseInt(args[2]);
-        System.out.println("a: " + a + " b: " + b + " c: " + c);
 
-        int d = c * c;
-        int e = (a * a) + (b * b);
+        int a2 = a * a;
+        int b2 = b * b;
+        int c2 = c * c;
 
-        System.out.println("is " + d + " = " + e + "? " + (d == e));
+        System.out.println((a2 + b2) == c2);
     }
 }
