@@ -1,11 +1,13 @@
 public class RightTriangle {
     public static void main(String[] args) {
-        double a = Double.parseDouble(args[0]);
-        double b = Double.parseDouble(args[1]);
-        double c = Double.parseDouble(args[2]);
+        int a = Integer.parseInt(args[0]);
+        int b = Integer.parseInt(args[1]);
+        int c = Integer.parseInt(args[2]);
 
-        double d = c * c;
-        double e = (a * a) + (b * b);
-        System.out.println(d == e);
+        int a2 = a * a;
+        int b2 = b * b;
+        int c2 = c * c;
+
+        System.out.println((a2 + b2) == c2);
     }
 }
