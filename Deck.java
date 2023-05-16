@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 /**
  * Generate and print a deck of cards

@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class TestScores {
     public static void main(String[] args) {
         double[][] a = {
