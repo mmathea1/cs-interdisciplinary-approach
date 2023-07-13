@@ -21,7 +21,7 @@ public class Ramanujan {
                         if (c3 + d3 == a3 + b3) {
                             System.out.print((a3 + b3) + " = ");
                             System.out.print(a + "^3 + " + b + "^3 = ");
-                            System.out.print(c + "^3 + " + d + "^3 = ");
+                            System.out.print(c + "^3 + " + d + "^3");
                             System.out.println();
                         }
                     }
