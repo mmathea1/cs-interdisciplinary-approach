@@ -8,6 +8,10 @@ public class RightTriangle {
         int b2 = b * b;
         int c2 = c * c;
 
-        System.out.println((a2 + b2) == c2);
+        boolean p = (a > 0 && b > 0 && c > 0);
+
+        boolean q = (a2 + b2 == c2);
+
+        System.out.println((p && q));
     }
 }
