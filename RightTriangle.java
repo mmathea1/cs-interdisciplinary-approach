@@ -10,7 +10,7 @@ public class RightTriangle {
 
         boolean p = (a > 0 && b > 0 && c > 0);
 
-        boolean q = (a2 + b2 == c2);
+        boolean q = ((a2 + b2 == c2) || (a2 + c2 == b2) || (b2 + c2 == a2));
 
         System.out.println((p && q));
     }
