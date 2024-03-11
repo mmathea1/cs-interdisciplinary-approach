@@ -1,20 +1,32 @@
+/**
+ * implementation Haversine Distance Algorithm between two places
+ */
 public class GreatCircle {
+    /**
+     * @param args
+     *             arg 1- latitude 1
+     *             arg 2 — longitude 1
+     *             arg 3 — latitude 2
+     *             arg 4 — longitude 2
+     */
     public static void main(String[] args) {
 
-        double args1 = Double.parseDouble(args[0]);
-        double args2 = Double.parseDouble(args[1]);
-        double args3 = Double.parseDouble(args[2]);
-        double args4 = Double.parseDouble(args[3]);
+        double startLat = Double.parseDouble(args[0]);
+        double endLat = Double.parseDouble(args[2]);
+        double startLong = Double.parseDouble(args[1]);
+        double endLong = Double.parseDouble(args[3]);
         double r = 6371.0;
-        double x1 = Math.toRadians(args1);
-        double x2 = Math.toRadians(args2);
-        double y1 = Math.toRadians(args3);
-        double y2 = Math.toRadians(args4);
-        double sin = Math.sin(0.0);
 
-        double d = 2 * r * Math.asin(Math
-                .sqrt((sin * sin) * ((x2 - x1) / 2) + (Math.cos(x1) * Math.cos(x2) * (sin * sin) * ((y2 - y1) / 2))));
-        System.out.println(d + " kilometers");
+        double dLat = Math.toRadians((startLat - endLat));
+        double dLong = Math.toRadians((startLong - endLong));
+        startLat = Math.toRadians(startLat);
+        endLat = Math.toRadians(endLat);
+        double haversine1 = Math.pow(Math.sin(dLat / 2), 2);
+        double haversine2 = Math.pow(Math.sin(dLong / 2), 2);
+        double a = haversine1 + Math.cos(startLat) * Math.cos(endLat) * haversine2;
+        double b = r * 2 * Math.asin(Math.sqrt(a));
+        // double d = r * b
+        System.out.println(b + " kilometers");
     }
 
 }
