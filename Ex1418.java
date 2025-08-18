@@ -1,4 +1,4 @@
-public class Ex1416 {
+public class Ex1418 {
         static int[][] mat1 = {
             {1, 2, 3},
             {4, 5, 6}
